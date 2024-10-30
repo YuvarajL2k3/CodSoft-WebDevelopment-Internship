@@ -1,0 +1,102 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(45deg,blue,orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: con linear 1.7s infinite;
+    flex-direction: column;
+}
+h1{
+  margin-bottom: 40px;
+  background:linear-gradient(to right,snow,gray,black);
+  color: transparent;
+  background-clip: text;
+  font-size: 50px;
+  animation: text linear 1s infinite;
+}
+
+   
+@keyframes con{
+    0%{
+        background:linear-gradient(45deg,blue,orange);
+    }
+    25%{
+        background:linear-gradient(90deg,blue,orange);
+    }
+    50%{
+        background:linear-gradient(135deg,blue,orange);
+    }
+    75%{
+        background:linear-gradient(180deg,blue,orange);
+    }
+    100%{
+        background:linear-gradient(360deg,blue,orange);
+    }
+
+
+
+}
+
+.calculator{
+    background:linear-gradient(135deg,rgb(0, 0, 255,0.6),rgb(255, 165, 0,0.6));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+.calculator form input{
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2) ;
+}
+form .display{
+    display: flex;
+    margin: 20px 0;
+    justify-content: flex-end;
+}
+form .display input{
+    box-shadow:none ;
+    text-align: right;
+    flex-grow: 1;
+     
+    font-size: 45px;
+    
+    
+}
+.calculator form .equal{
+    width: 145px;
+}
+
+.calculator form input:hover{
+    cursor: pointer;
+    background-color: white;
+    color:black;
+    transition: .9s;
+}
+.calculator form .controls{
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+    outline: none;
+    border: none;
+}
+.calculator form .controls:hover{
+    color: white;
+    background-color: black;
+    transition: .9s;
+}
